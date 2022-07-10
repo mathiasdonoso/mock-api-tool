@@ -1,8 +1,5 @@
 {
   "prefix": "/api/v1",
-  "config": {
-    "response_time": 1000
-  },
   "cases": [
     {
       "config": {
@@ -25,6 +22,9 @@
       }
     },
     {
+      "config": {
+        "response_time": 800
+      },
       "request": {
         "url": "/users",
         "headers": {},

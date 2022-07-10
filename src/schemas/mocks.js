@@ -28,7 +28,6 @@ const caseSchema = Joi.object({
 
 const apiSchema = Joi.object({
   prefix: Joi.string(),
-  config: configSchema,
   cases: Joi.array().items(caseSchema),
 });
 
