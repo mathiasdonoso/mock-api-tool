@@ -1,0 +1,19 @@
+{
+  "name": "mock-api-tool",
+  "version": "0.0.1",
+  "description": "Mock api generator",
+  "scripts": {
+    "local": "nodemon ./bin/www"
+  },
+  "author": "Mathías Donoso",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "compression": "^1.7.4",
+    "express": "^4.18.1",
+    "joi": "^17.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "prefix": "/api/v1",
+  "config": {
+    "response_time": 1000
+  },
+  "cases": [
+    {
+      "config": {
+        "response_time": 2000
+      },
+      "request": {
+        "url": "/users",
+        "headers": {},
+        "query": {},
+        "body": {},
+        "method": "get"
+      },
+      "response": {
+        "status": 200,
+        "headers": {},
+        "body": [
+          { "id": 1, "name": "Alice", "email": "alice@email.com" },
+          { "id": 2, "name": "Bob", "email": "bob@email.com" }
+        ]
+      }
+    },
+    {
+      "request": {
+        "url": "/users",
+        "headers": {},
+        "query": {},
+        "body": {
+          "name": "Mathías",
+          "email": "mathias@email.com"
+        },
+        "method": "post"
+      },
+      "response": {
+        "status": 201,
+        "headers": {},
+        "body": {
+          "id": 3,
+          "name": "Mathías",
+          "email": "mathias@email.com"
+        }
+      }
+    },
+    {
+      "request": {
+        "url": "/users",
+        "headers": {},
+        "query": {},
+        "body": {
+          "name": "Alice",
+          "email": "alice@email.com"
+        },
+        "method": "post"
+      },
+      "response": {
+        "status": 400,
+        "headers": {},
+        "body": {
+          "error": "Email is already registered."
+        }
+      }
+    }
+  ]
+}
